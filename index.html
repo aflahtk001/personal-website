@@ -1,0 +1,184 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/>
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <!-- Site Metas -->
+  <meta name="keywords" content="personal website/>
+  <meta name="description" content="personal website of a frontend devaloper with contact us support"/>
+  <meta name="author" content="AFLAH TK"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="icon" href="images/icon.jpg" type="images/icon" style="border-radius: 50%;">
+  <title >AFLAH TK</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"/>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&amp;display=swap" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet"/>
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+              <a class="navbar-brand" href="index.html">
+                <span>
+                  AFLAH TK
+                </span>
+              </a>
+              
+              
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+         
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-6">
+                  <div class="slider_detail-box">
+                    <h1>
+                    Trasforming <br/>
+                      Your Website<br/>
+                       Visions !
+                    </h1>
+                    <p>
+                      "I am a creative and enthusiastic front-end developer, eager to turn designs into reality and craft user-friendly web experiences. As a fresher, I am excited to learn and grow, constantly seeking new challenges and opportunities to expand my skills and deliver innovative solutions."
+                    </p>
+
+                    <br>
+                    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+                      <div class="social-box">
+                        <a href="">
+                          <img src="  " alt=""/>
+                        </a>
+            
+                        <a href="https://twitter.com/AFLAHTK3?t=0blsW2u8TNpuf-roCe80WA&s=09" target="_blank">
+                          <img src="images/twitter.png" alt=""/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aflah-tk-86a390246" target="_blank">
+                          <img src="images/linkedin1.png" alt=""/>
+                        </a>
+                        <a href="https://instagram.com/aflahtk._?igshid=YmMyMTA2M2Y=" target="_blank">
+                          <img src="images/instagram1.png" alt=""/>
+                        </a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="images/slider-img.png" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           
+      
+        </div>
+         
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container contact_heading">
+      <h2>
+        Contact Us
+      </h2>
+      <p>
+        "Let's address your concerns and find a solution!"
+      </p>
+    </div>
+    <div class="container">
+      <form id="submit-form" action="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fname">Name</label>
+            <input type="text" class="form-control" name="name" id=" fname"/>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lname">Email</label>
+            <input type="email" class="form-control" name="email" id="lname"/>
+          </div>
+
+        </div>
+         
+        <div class="form-group">
+          <label for="subject">Message</label>
+          <input type=" text" class="form-control" id="subject" style="height: 100px;" name="Message" placeholder=""/>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <button type="submit" value="submit" >Send</button>
+    </div>
+    </form>
+    
+  </section>
+
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbwH10hwHxQJHm95zz2SVGZlS1o23Uyc2yhRzAu6Qg9x0YNk7lUXk9DDqFOziBTN0giO/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
+  <!-- end contact section -->
+  <div class="footer_bgh">
+     
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p>
+        Copyright ©<a href="https://github.com/aflahtk001" target="_blank">AFLAH TK</a> 2023
+      </p>
+      
+      
+    </section>
+    <!-- footer section -->
+  </div>
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+
+</body></html>
